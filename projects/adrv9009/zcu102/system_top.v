@@ -206,7 +206,7 @@ module system_top (
               adrv9009_gpio_16,     // 33
               adrv9009_gpio_18}));  // 32
 
-  assign gpio_i[ 7: 0] = gpio_o[ 7: 0];
+   assign gpio_i[ 7: 0] = gpio_o[ 7: 0];
   assign gpio_i[20: 8] = gpio_bd_i;
   assign gpio_bd_o = gpio_o[ 7: 0];
 
@@ -255,3 +255,5 @@ module system_top (
     .ref_clk (ref_clk1_bufg));
 
 endmodule
+
+
