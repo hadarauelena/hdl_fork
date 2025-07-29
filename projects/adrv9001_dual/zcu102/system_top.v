@@ -373,7 +373,7 @@ module system_top (
     .adrv2_tx1_dclk_out_n (adrv2_tx1_dclk_in_n),
     .adrv2_tx1_dclk_out_p (adrv2_tx1_dclk_in_p),
 
-     //.adrv1_devclk_out (adrv1_devclk_out),
+    //.adrv1_devclk_out (adrv1_devclk_out),
     .adrv1_rx2_dclk_in_n (adrv1_rx2_dclk_out_n),
     .adrv1_rx2_dclk_in_p (adrv1_rx2_dclk_out_p),
     .adrv1_rx2_strobe_in_n (adrv1_rx2_strobe_out_n),
