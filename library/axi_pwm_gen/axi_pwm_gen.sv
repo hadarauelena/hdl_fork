@@ -143,13 +143,21 @@ module axi_pwm_gen #(
 
   localparam        PWMS = N_PWMS-1;
   localparam [31:0] CORE_VERSION = {16'h0002,     /* MAJOR */
-                                     8'h01,       /* MINOR */
+                             8'h01,       /* MINOR */
                                      8'h01};      /* PATCH */
-  localparam [31:0] CORE_MAGIC = 32'h601a3471;    // PLSG
+
+localparam [31:0] CORE_VERSION = {16'h0002,     /* MAJOR */
+                                    8'h01,       /* MINOR */
+                                    8'h01      /* PATCH */
+                                    };
+
+  localparam [31:0] CORE_VERSION = {16'h0002,8'h01, 8'h01};
+
+localparam [31:0] CORE_MAGIC = 32'h601a3471;    // PLSG
   localparam reg [31:0] PULSE_WIDTH_G[15:0] = '{PULSE_0_WIDTH,
                                                 PULSE_1_WIDTH,
                                                 PULSE_2_WIDTH,
-                                                PULSE_3_WIDTH,
+                      PULSE_3_WIDTH,
                                                 PULSE_4_WIDTH,
                                                 PULSE_5_WIDTH,
                                                 PULSE_6_WIDTH,

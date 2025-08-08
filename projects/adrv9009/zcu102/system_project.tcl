@@ -23,7 +23,7 @@ source $ad_hdl_dir/projects/scripts/adi_board.tcl
 #   [TX/RX/RX_OS]_JESD_S : Number of samples per frame
 #   [TX/RX/RX_OS]_JESD_NP : Number of bits per sample
 
-adi_project adrv9009_zcu102 0 [list \
+adi_project adrv9009_zc102 0 [list \
   TX_JESD_M       [get_env_param TX_JESD_M       4 ] \
   TX_JESD_L       [get_env_param TX_JESD_L       4 ] \
   TX_JESD_S       [get_env_param TX_JESD_S       1 ] \

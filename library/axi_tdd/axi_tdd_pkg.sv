@@ -41,15 +41,13 @@ package axi_tdd_pkg;
     WAITING = 2'b10,
     RUNNING = 2'b11} state_t;
 
-  localparam
-    PCORE_VERSION = 32'h00020062,
-    PCORE_MAGIC   = 32'h5444444E; // "TDDN", big endian
+  localparam PCORE_VERSION = 32'h00020062, PCORE_MAGIC   = 32'h5444444E; // "TDDN", big endian
 
   // register address offset
   localparam
     ADDR_TDD_VERSION        = 8'h00,
     ADDR_TDD_ID             = 8'h01,
-    ADDR_TDD_SCRATCH        = 8'h02,
+  ADDR_TDD_SCRATCH        = 8'h02,
     ADDR_TDD_IDENTIFICATION = 8'h03,
     ADDR_TDD_INTERFACE      = 8'h04,
     ADDR_TDD_DEF_POLARITY   = 8'h05,
@@ -70,7 +68,7 @@ package axi_tdd_pkg;
     CH0  = 0,
     CH1  = 1,
     CH2  = 2,
-    CH3  = 3,
+    CH3 = 3,
     CH4  = 4,
     CH5  = 5,
     CH6  = 6,
