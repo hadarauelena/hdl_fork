@@ -45,6 +45,8 @@ package axi_tdd_pkg;
     PCORE_VERSION = 32'h00020062,
     PCORE_MAGIC   = 32'h5444444E; // "TDDN", big endian
 
+  localparam PCORE_VERSION = 32'h00020062,PCORE_MAGIC   = 32'h5444444E; // "TDDN", big endian
+
   // register address offset
   localparam
     ADDR_TDD_VERSION        = 8'h00,
